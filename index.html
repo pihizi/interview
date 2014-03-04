@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>面试题</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./main.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+    <div id="form">
+        <input id="name" type="text"/>
+        <button id="select">选题</button>
+        <ul id="users"></ul>
+    </div>
+    <div id="main" style="display:none;">
+        <div id="question"></div>
+        <div id="questionDescription"></div>
+        <ul id="answersList"></ul>
+        <div id="you">
+            <textarea id="youranswer"></textarea>
+        </div>
+        <div id="opts">
+            <div id="score"></div>
+            <div id="btns">
+                <button id="prev">上一题</button>
+                <button id="next">下一题</button>
+            </div>
+        </div>
+    </div>
+    <script src="./questions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./logic.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
