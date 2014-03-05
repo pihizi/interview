@@ -15,14 +15,6 @@ var questionsDB = [
             ,'重点关注信息'
         ]
     }
-    ,{
-        title: '哪个项目中用到的JS最复杂，实现了什么功能？遇到的问题，怎么解决'
-        ,answer: [
-            '功能'
-            ,'问题'
-            ,'解决问题能力'
-        ]
-    }
     // html && css
     ,{
         title: '简单介绍CSS盒模型'
@@ -71,6 +63,28 @@ var questionsDB = [
             ,'overflow:auto;_zoom:1'
             ,'overflow:hidden'
             ,':after 伪类元素'
+        ]
+    }
+    ,{
+        title: 'css3'
+        ,answers: [
+            'transition是干什么用的:  transition: width 2s;'
+            ,'animation创建一个loading动画, 请写出关键代码'
+            ,'js如何在css动作或者动画结束后执行callback'
+        ]
+        ,answer: [
+            '    animation-name: myfirst;'
+            ,'    animation-duration: 5s;'
+            ,'    animation-timing-function: linear;'
+            ,'    animation-delay: 2s;'
+            ,'    animation-iteration-count: infinite;'
+            ,'    animation-direction: alternate;'
+            ,'    animation-play-state: running;'
+            ,'    transform:rotate(7deg)'
+            ,'transitionend'
+            ,'animationstart'
+            ,'animationiteration'
+            ,'animationstart'
         ]
     }
     // javascript 库或框架的了解检查
@@ -132,11 +146,8 @@ var questionsDB = [
     ,{
         title: '"12~12345元": 用javascript检测价格区间是否符合预期'
         ,description: [
-            '~元：不对'
-            ,'0~123元：不对'
-            ,'~123元：不对'
-            ,'123~0元：不对'
-            ,'123~元：不对'
+            '是一个正整数区间'
+            ,'前后的大小需要考虑'
         ]
         ,answer: [
             '如果没用正则匹配的思路，做出来也只能给3分'
@@ -152,13 +163,28 @@ var questionsDB = [
         ]
     }
     ,{
-        title: '产生0~100的随机整数'
+        title: '产生10个0~100的随机整数, 并按大小进行排序后输出'
         ,answers: [
             '包含0'
             ,'包含100'
+            ,'如果不是10个300w个整数(~=3MB)，又该如何操作?'
+            ,' transferable objects 有没有听说过？'
         ]
         ,answer: [
             'parseInt(Math.random()*((100-0)+1), 10)'
+            ,'超大数组的管理'
+            ,'javascript模拟并行的：setTimeout, xhr'
+        ]
+    }
+    ,{
+        title: 'html5为javascript引入的线程技术：web worker'
+        ,answers: [
+            '使用场景'
+            ,'使用注意事项'
+        ]
+        ,answer: [
+            '无法使用：DOM、window对象、document对象、parent对象'
+            ,'同源策略'
         ]
     }
     ,{
@@ -182,7 +208,7 @@ var questionsDB = [
         ]
     }
     ,{
-        title: '你们是如何理前端代码的？'
+        title: '你们是如何管理前端代码的？'
         ,answers: [
             '为什么会考虑使用gruntjs？gruntjs可以为我们做哪些事情？'
             ,'有没有尝试开发gruntjs plugin?'
@@ -208,7 +234,12 @@ var questionsDB = [
         ]
     }
     ,{
-        title: '能否讲解一下MVVM模式前端框架的实现原理?'
+        title: '哪个项目中用到的JS最复杂，实现了什么功能？遇到的问题，怎么解决'
+        ,answer: [
+            '功能'
+            ,'问题'
+            ,'解决问题能力'
+        ]
     }
     ,{
         title: '设计一个分页插件'
@@ -219,17 +250,6 @@ var questionsDB = [
         ]
     }
     ,{
-        title: '前端模板引擎，你有用过吗？'
-        ,description: [
-            '异步应用越来越广泛，前端模板的使用越来越频繁'
-            ,'如果让你设计一个简单的模板引擎，你的思路是什么？'
-        ]
-        ,answer: [
-            'jquery作者的micro template'
-            ,'BaiduTemplate'
-        ]
-    }
-    ,{
         title: 'http状态码解释'
         ,answers: [
             '200', '301', '302', '304'
@@ -237,28 +257,6 @@ var questionsDB = [
         ,answer: [
             '301/302是在server端还是client端实现的跳转？有何区别?'
             ,'server端如何实现：nginx || php'
-        ]
-    }
-    ,{
-        title: 'css3'
-        ,answers: [
-            'transition是干什么用的:  transition: width 2s;'
-            ,'animation创建一个loading动画, 请写出关键代码'
-            ,'js如何在css动作或者动画结束后执行callback'
-        ]
-        ,answer: [
-            '    animation-name: myfirst;'
-            ,'    animation-duration: 5s;'
-            ,'    animation-timing-function: linear;'
-            ,'    animation-delay: 2s;'
-            ,'    animation-iteration-count: infinite;'
-            ,'    animation-direction: alternate;'
-            ,'    animation-play-state: running;'
-            ,'    transform:rotate(7deg)'
-            ,'transitionend'
-            ,'animationstart'
-            ,'animationiteration'
-            ,'animationstart'
         ]
     }
     ,{
@@ -283,6 +281,8 @@ var questionsDB = [
         ,answers: [
             'smarty模板有了解吗？include和extends的用法？'
             ,'php使用json的相关函数有哪些？'
+            ,'php数组转字符串的函数'
+            ,'介绍php的flush的作用和使用场景'
             ,'如果新学一门语言，你认为该如何入门？应该有哪些注意事项？' 
         ]
     }
