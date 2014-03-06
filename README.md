@@ -1,7 +1,7 @@
 interview
 =========
 
-面试题
+面试题 [访问](http://phizzy.github.io/interview/)
 
 
 #### 将master的修改merge到gh-pages
