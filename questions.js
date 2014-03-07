@@ -365,4 +365,7 @@ var questionsDB = [
         title: '你用哪种编辑器？有没有实现javascript.css.html的autocomplete功能？如何实现的？'
         ,answer: '主要考察在提升工作效率方面的思考'
     }
+    ,{
+        title: '补充问题'
+    }
 ];
